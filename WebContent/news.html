@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/lightbox.css">
+
+<link href="http://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+</head>
+<body>
+
+<div class="banner-top">
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li>
+						<div class="w3layouts-banner-news">
+							<div class="container">
+								<div class="agileits-banner-info">
+									<h3>N</h3>
+									<h4>旅游指南</h4>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+						
+						$(function () {
+						  
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+
+						});
+			</script>
+			
+		</div>
+	</div>
+
+	<div class="banner">
+    <div class="header">
+      <div class="container">
+        <div class="header-left">
+          <div class="w3layouts-logo">
+            <h1>
+              <a href="index.html">天津 <span>旅游</span></a>
+            </h1>
+          </div>
+        </div>
+        <div class="header-right">
+          <button type="button" class="btn btn-default"  id="login">登录</button>
+          <div class="btn-group" style="display: none;" id="loged">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span id="username_">
+                admin
+              </span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" style="min-width: 60px;">
+              <li><a href="my.html">个人中心</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" id="logout">退出</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="top-nav">
+						<nav class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+							
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a href="index.html">景点一览</a></li>
+									<li><a href="notes.html" >热门游记</a></li>
+									<li><a class="active list-border " href="news.html" >旅游指南</a></li>
+									<li><a href="hotal.html" >酒店精选</a></li>
+									<li><a href="foods.html" >特色美食</a></li>
+									<li><a  href="buy.html" >购物攻略</a></li>
+								</ul>
+								<div class="clearfix"> </div>
+							</div>
+						</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="news" id="news">
+		<div class="w3-news-top">
+			<h3></h3>
+		</div>
+		<div class="w3l-about w3l-news">
+			<div class="container">
+				<div class="w3ls-heading">
+					<h3>旅游指南</h3>
+				</div>
+				<div class="wthree-news-grids">
+					<div class="col-md-6 agile-news-right-info">
+						<div class="col-sm-4 agile-news-img">
+
+						</div>
+						<div class="col-sm-8 agile-news-img-info">
+							<h5><a href="#" data-toggle="modal" data-target="#myModal">天津精品三日游</a></h5>
+							<div class="agileits-w3layouts-border"> </div>
+							<p>
+								天数：3 天 <br/>时间：10 月 <br/>和谁：情侣
+								<br/>玩法：传统手工艺，人文
+
+							</p>
+							<h6><i class="fa fa-calendar" aria-hidden="true"></i> 2018.10.09</h6>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 agile-news-right-info">
+						<div class="col-sm-4 agile-news-img agile-news-img1">
+
+						</div>
+						<div class="col-sm-8 agile-news-img-info">
+							<h5><a href="#" data-toggle="modal" data-target="#myModal1">天津悠闲三日游</a></h5>
+							<div class="agileits-w3layouts-border"> </div>
+							<p>
+							天数：3 天 <br/>时间：12 月 <br/>和谁：家人
+								<br/>玩法：传统手工艺，人文摄影，传统文化
+							<h6><i class="fa fa-calendar" aria-hidden="true"></i> 2018.12.12</h6>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="news" id="news">
+		<div class="w3-news-top">
+			<h3></h3>
+		</div>
+		<div class="w3l-about w3l-news">
+			<div class="container">
+				<div class="wthree-news-grids">
+					<div class="col-md-6 agile-news-right-info">
+						<div class="col-sm-4 agile-news-img2">
+
+						</div>
+						<div class="col-sm-8 agile-news-img-info">
+							<h5><a href="#" data-toggle="modal" data-target="#myModal2">天津周末游</a></h5>
+							<div class="agileits-w3layouts-border"> </div>
+							<p>
+								天数：2 天 <br/>时间：03 月 <br/>和谁：同学
+								<br/>玩法：泛舟湖上 玩水嬉戏
+
+							</p>
+							<h6><i class="fa fa-calendar" aria-hidden="true"></i> 2019.03.09</h6>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 agile-news-right-info">
+						<div class="col-sm-4 agile-news-img agile-news-img3">
+
+						</div>
+						<div class="col-sm-8 agile-news-img-info">
+							<h5><a href="#" data-toggle="modal" data-target="#myModal3">天津古典游</a></h5>
+							<div class="agileits-w3layouts-border"> </div>
+							<p>
+							天数：3 天 <br/>时间：01 月 <br/>和谁：家人
+								<br/>玩法：品味天津的古典文化
+							<h6><i class="fa fa-calendar" aria-hidden="true"></i> 2019.01.12</h6>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">天津精品三日游</h4>
+						<h5>2018.10.09</h5>
+					</div>
+					<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/n1.jpg" alt="" />
+						<p>天津是一座百年名城，优雅的万国租界、繁华的海河两岸，清新的水上公园等等，都是游客游玩的重点。这条路线共3天时间，带你欣赏天津市区最精华的景点，领略优雅的津门风韵。
+<br>DAY1 天津之眼-意式风情街-观光巴士-煎饼果子-西开教堂
+	<br>							DAY2 五大道-劝业场-辽宁路-滨江道-鼓楼-古文化街
+		<br>						DAY3 滨江道-买礼品-凉皮凉面-地铁-大悦城-南市食品街-古文化街</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal about-modal fade" id="myModal1" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">天津悠闲三日游</h4>
+						<h5>2018.12.12</h5>
+					</div>
+					<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/n2.jpg" alt="" />
+						<p>天津，是中国六座超大城市之一， 自古因漕运而兴起，明永乐二年正式筑城，是中国古代唯一有确切建城时间记录的城市。历经600多年，造就了天津中西合璧、古今兼容的独特城市风貌。
+
+<br>DAY1 天津之眼-意式风情街-观光巴士-张学良故居
+						<br>		DAY2 五大道-劝业场-瓷房子-鼓楼-古文化街
+							<br>	DAY3 水上公园-南开大学-天津大学-大天津广播电视塔（天塔）</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal about-modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">天津周末游</h4>
+						<h5>2019.03.09</h5>
+					</div>
+					<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/n3.jpg" alt="" />
+						<p>市区到塘沽有直达的地铁，上午可以先到洋货市场看看。下午可以参观一下汉沽的航母主题公园，航母爱好者估计会在这磨上好几个小时。然后可以去东疆湾，在炎热的夏季和家人朋友一起在这边享受海水的清凉惬意也是一大乐事啊。
+<br>DAY1 洋货市场-泰达航母主题公园-东疆湾人造黄金海岸
+					<br>			DAY2 大沽口炮台遗址-北塘出海打渔船-北塘海鲜街
+								</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal about-modal fade" id="myModal3" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">天津古典游</h4>
+						<h5>2019.01.12</h5>
+					</div>
+					<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/n4.jpg" alt="" />
+						<p>旧日津门的缩影，就在五大道。这里曾经是英租界，民国时期，清朝遗老、北洋政府里很多官员名流都曾在这里寓居，一栋栋洋房仿佛诉说着津门曾经的风云故事。
+							<br>DAY1 天津之眼-意式风情街-世纪钟广场
+							<br>	DAY2 五大道-劝业场-辽宁路-滨江道-鼓楼-古文化街
+							<br>	DAY3 滨江道-海河观光游船-大悦城-南市食品街-古文化街</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="main" style="width: 600px; height:400px; margin:0 auto;"></div>
+	<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        data:['精品三日游','悠闲三日游','周末游','古典游']
+    },
+    series: [
+        {
+            name:'天津旅游路线受欢迎度',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:1335, name:'精品三日游'},
+                {value:1010, name:'悠闲三日游'},
+                {value:934, name:'周末游'},
+                {value:835, name:'古典游'}
+            ]
+        }
+    ]
+};
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+
+	<div class="footer" style="margin-top:50px">
+		<div class="container">
+			<div class="copyright">
+				<p>Copyright &copy; 2019.毕业设计————天津旅游网站</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+
+</body>
+</html>

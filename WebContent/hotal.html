@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/lightbox.css">
+
+<link rel="stylesheet" type="text/css" href="css/message.css"/>
+
+<link href="http://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+
+	function showMap(url) {
+		$("#map").attr("src", url);
+		document.frames('map').location.reload();
+	}
+</script>
+
+</head>
+<body>
+	<div class="banner-top">
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li>
+						<div class="w3layouts-banner-hotal">
+							<div class="container">
+								<div class="agileits-banner-info">
+									<h3>N</h3>
+									<h4>酒店精选</h4>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+						
+						$(function () {
+						  
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+
+						});
+			</script>
+		</div>
+	</div>
+	<div class="banner">
+    <div class="header">
+      <div class="container">
+        <div class="header-left">
+          <div class="w3layouts-logo">
+            <h1>
+              <a href="index.html">天津 <span>旅游</span></a>
+            </h1>
+          </div>
+        </div>
+        <div class="header-right">
+          <button type="button" class="btn btn-default"  id="login">登录</button>
+          <div class="btn-group" style="display: none;" id="loged">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span id="username_">
+                admin
+              </span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" style="min-width: 60px;">
+              <li><a href="my.html">个人中心</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" id="logout">退出</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="top-nav">
+						<nav class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+							
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a href="index.html">景点一览</a></li>
+									<li><a href="notes.html" >热门游记</a></li>
+									<li><a href="news.html" >旅游指南</a></li>
+									<li><a class="active list-border " href="hotal.html" >酒店精选</a></li>
+									<li><a href="foods.html" >特色美食</a></li>
+									<li><a  href="buy.html" >购物攻略</a></li>
+								</ul>
+								<div class="clearfix"> </div>
+							</div>
+						</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="hotal" id="hotal">
+		<div class="w3-team-top">
+			<h3></h3>
+		</div>
+		<div class="w3l-about w3l-team">
+			<div class="container">
+				<div class="w3ls-heading">
+					<h3>酒店精选</h3>
+				</div>
+				<div class="agile-team-grids">
+					<div class="col-sm-3 team-grid">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<a href=""><img src="images/t1.jpg" alt="" /></a>
+								</div>
+								<div class="back">
+									<h4>万丽天津宾馆</h4>
+									<p>天津市河西区宾水道16号</p>
+									<div class="w3l-social">
+										<ul>
+											<li onClick="showMap('https://www.amap.com/place/B00160EY8L')"><a href="#map"><i class="fa fa-bus"></i></a></li>
+											<li><i class="fa fa-phone" onClick="alert('联系电话：400-8776-9090')"></i></li>
+										</ul>
+										<br>
+										<span  class="label label-primary open" 
+										  data-name="万丽天津宾馆" data-ad="天津市河西区宾水道16号" data-money="￥338"
+										  style="cursor: pointer;">预定酒店</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 team-grid">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/t2.jpg" alt="" />
+								</div>
+								<div class="back">
+									<h4>荔园快捷酒店</h4>
+									<p>天津市河北区建国道54号</p>
+									<div class="w3l-social">
+										<ul>
+											<li onClick="showMap('https://www.amap.com/place/B001606T4S')"><a href="#map"><i class="fa fa-bus"></i></a></li>
+											<li><i class="fa fa-phone" onClick="alert('联系电话：400-8776-9091')"></i></li>
+										</ul>
+										<br>
+                    <span   class="label label-primary open" 
+                      data-name="荔园快捷酒店" data-ad="天津市河北区建国道54号" data-money="￥198"
+                      style="cursor: pointer;">预定酒店</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 team-grid">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/t3.jpg" alt="" />
+								</div>
+								<div class="back">
+									<h4>天津酒店式公寓</h4>
+									<p>天津市宝坻区宝白大道泰富橄榄园B座</p>
+									<div class="w3l-social">
+										<ul>
+											<li onClick="showMap('https://www.amap.com/place/B0FFH336YA')"><a href="#map"><i class="fa fa-bus"></i></a></li>
+											<li><i class="fa fa-phone" onClick="alert('联系电话：400-8776-9093')"></i></li>
+										</ul>
+										
+										<br>
+                    <span   class="label label-primary open" 
+                      data-name="天津酒店式公寓" data-ad="天津市宝坻区宝白大道泰富橄榄园B座" data-money="￥412"
+                      style="cursor: pointer;">预定酒店</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 team-grid">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/t4.jpg" alt="" />
+								</div>
+								<div class="back">
+									<h4>天津大悦公寓嘉佳酒店</h4>
+									<p>天津市南开区南门外大街大悦公寓3号楼911</p>
+									<div class="w3l-social">
+										<ul>
+											<li onClick="showMap('https://www.amap.com/place/B0FFFQ4I71')"><a href="#map"><i class="fa fa-bus"></i></a></li>
+											<li><a ><i class="fa fa-phone" onClick="alert('联系电话：400-8776-9080')"></i></a></li>
+										</ul>
+										
+										<br>
+                    <span  class="label label-primary open" 
+                      data-name="天津大悦公寓嘉佳酒店" data-ad="天津市南开区南门外大街大悦公寓3号楼911" data-money="￥488"
+                      style="cursor: pointer;">预定酒店</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="map" style="margin-top:50px">
+		<iframe id="map" src="https://www.amap.com/search?query=%E5%A4%A9%E6%B4%A5%E9%85%92%E5%BA%97&city=120000&geoobj=117.175151%7C39.118943%7C117.209513%7C39.134302&zoom=15" style="border: 0" allowfullscreen></iframe>
+	</div>
+	
+	<div class="footer" style="margin-top:50px">
+		<div class="container">
+			<div class="copyright">
+				<p>Copyright &copy; 2019.毕业设计————天津旅游网站</p>
+			</div>
+		</div>
+	</div>
+	
+	  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">预定酒店</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">酒店名称</label>
+              <div id="name">
+                
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">地址</label>
+              <div id="ad">
+                
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="exampleInputEmail1">价格</label>
+              <div id="money">
+                
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="exampleInputEmail1">姓名</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="输入姓名">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">身份证号</label>
+              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="输入身份证号">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> 预定协议
+              </label>
+            </div>
+            <div  id="btn" class="btn btn-primary">提交预定</div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script src="css/message.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+      $(".open").click(function () {
+        var name = $(this).attr("data-name");
+        var ad = $(this).attr("data-ad");
+        var money = $(this).attr("data-money");
+        $("#name").html(name);
+        $("#ad").html(ad);
+        $("#money").html(money)
+        $('#myModal').modal('show');
+      })
+      $("#btn").click(function () {
+         var username =  $("#exampleInputEmail1").val();
+         var cardcode =  $("#exampleInputPassword1").val();
+         if (username != '' && cardcode != ''  ) {
+           if ($("input[type='checkbox']").is(':checked') == true) {
+             if (localStorage.getItem('islogon')) {
+               var arr = [];
+               var hisArr = localStorage.getItem('hotelArr');
+               if (hisArr != null) {
+                 var jsonObj =  JSON.parse(hisArr);//转换为json对象
+                     arr = jsonObj;
+               }
+               var obj = {};
+               obj.name = $("#name").html();
+               obj.ad = $("#ad").html();
+               obj.money = $("#money").html();
+               obj.username = $("#exampleInputEmail1").val();
+               obj.code = $("#exampleInputPassword1").val();
+               var now = new Date();
+               var time = now.getFullYear() + "-" +((now.getMonth()+1)<10?"0":"")+(now.getMonth()+1)+"-"+(now.getDate()<10?"0":"")+now.getDate();
+               obj.time = time;
+               arr.push(obj)
+               var jsonStr1 = JSON.stringify(arr)
+               localStorage.setItem('hotelArr',jsonStr1);
+               $.message('成功');
+               window.location.href = 'manage/hotel.html'
+             } else {
+               $.message({
+                  message: '请先登录',
+                  type:'error'
+                });
+             }
+           } else {
+             $.message({
+                message: '请选择预定协议',
+                type:'error'
+              });
+           }
+         } else {
+           $.message({
+              message: '信息要填写完整',
+              type:'error'
+            });
+         }
+      })
+	</script>
+
+</body>
+</html>

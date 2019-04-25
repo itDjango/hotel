@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/message.css"/>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+	function GetQueryString(name)
+	{
+	     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	     var r = window.location.search.substr(1).match(reg);
+	     if(r!=null)return  unescape(r[2]); 
+	     return null;
+	}
+
+	     $(function(){
+	       var index = parseInt(GetQueryString("index"));
+	       $.getJSON("static/jd.json",function(data){
+	                     $.each(data.content,function(infoIndex,info){
+	                           if (index == infoIndex) {
+	                             var name = info.name;
+	                             var imageUrl = info.imageUrl;
+	                             var article = info.article;
+	                             var date = info.addDate;
+	                             var user = info.addUser;
+	                             $("#mainImg").attr("src", imageUrl);
+	                             $("#titleid").html(name);
+	                             $("#name").html(name);
+	                             $("#ad").html(info.ad);
+	                             $("#money").html(info.money);
+	                           	$("#desc").html(article);
+	                           /* 	$("#fdate").html(date);
+	                           	$("#fuser").html(user); */
+
+	                           }
+	                       })
+	                     });
+
+	     });
+</script>
+
+</head>
+<body>
+
+	<div class="about">
+		<div class="container">
+			<div class="about-top heading">
+				<h3 id="titleid">ABOUT US</h3>
+				<h4>
+				  <span data-toggle="modal" data-target="#myModal" class="label label-primary" style="cursor: pointer;">预定门票</span>
+				</h4>
+			</div>
+			<div class="about-bottom">
+				<p id="desc" align="left" style="font-size: 24px;">Pellentesque aliquet sit amet purus gravida pulvinar. Duis quis risus a nunc ultricies varius. Aenean aliquam pellentesque magna consectetur hendrerit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc id est ac nulla venenatis luctus vulputate sit amet libero. Praesent et aliquam leo. In aliquet felis orci, in dapibus nisi ullamcorper sed. Praesent congue ante sed dui sodales, vitae pharetra risus semper. Aliquam malesuada non ex quis mollis. Etiam non felis id lorem sodales posuere. Ut est nisl, viverra id nisi et, maximus pellentesque elit. Etiam luctus nulla at semper congue.</p>
+				<div class="about-btm">
+					<div class="col-md-2"></div>
+					<div class="col-md-6">
+						<img id="mainImg" src="images/img-1.jpg" alt="" />
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer" style="margin-top:50px">
+		<div class="container">
+			<div class="copyright">
+				<p>Copyright &copy; 2019.毕业设计————天津旅游网站</p>
+			</div>
+		</div>
+	</div>
+	
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">预定门票</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">景点名称</label>
+              <div id="name">
+              	
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">地点</label>
+              <div id="ad">
+                
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="exampleInputEmail1">价格</label>
+              <div id="money">
+                
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="exampleInputEmail1">姓名</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="输入姓名">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">身份证号</label>
+              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="输入身份证号">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> 预定协议
+              </label>
+            </div>
+            <div  id="btn" class="btn btn-primary">提交预定</div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script src="css/message.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+			$("#btn").click(function () {
+			   var username =  $("#exampleInputEmail1").val();
+			   var cardcode =  $("#exampleInputPassword1").val();
+			   if (username != '' && cardcode != ''  ) {
+			     if ($("input[type='checkbox']").is(':checked') == true) {
+			       if (localStorage.getItem('islogon')) {
+  			       var arr = [];
+  			       var hisArr = localStorage.getItem('adArr');
+  			       if (hisArr != null) {
+  			         var jsonObj =  JSON.parse(hisArr);//转换为json对象
+  			             arr = jsonObj;
+  			       }
+  			       var obj = {};
+  			       obj.name = $("#name").html();
+  			       obj.ad = $("#ad").html();
+  			       obj.money = $("#money").html();
+  			       obj.username = $("#exampleInputEmail1").val();
+  			       obj.code = $("#exampleInputPassword1").val();
+  			       var now = new Date();
+               var time = now.getFullYear() + "-" +((now.getMonth()+1)<10?"0":"")+(now.getMonth()+1)+"-"+(now.getDate()<10?"0":"")+now.getDate();
+               obj.time = time;
+  			       arr.push(obj)
+  			       var jsonStr1 = JSON.stringify(arr)
+  			       localStorage.setItem('adArr',jsonStr1);
+  			       $.message('成功');
+  			       window.location.href = 'manage/ad.html'
+			       }
+			       else {
+			         $.message({
+                  message: '请先登录',
+                  type:'error'
+                });
+			       }
+			     } else {
+			       $.message({
+                message: '请选择预定协议',
+                type:'error'
+              });
+			     }
+			   } else {
+			     $.message({
+              message: '信息要填写完整',
+              type:'error'
+            });
+			   }
+			})
+
+			
+
+	</script>
+
+</body>
+</html>

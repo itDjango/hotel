@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<script type="application/x-javascript">
+
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+
+</script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"
+	media="all" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/lightbox.css">
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop : $(this.hash).offset().top
+			}, 1000);
+		});
+	});
+</script>
+
+</head>
+<body>
+	<div class="banner-top">
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li>
+						<div class="w3layouts-banner-foods">
+							<div class="container">
+								<div class="agileits-banner-info">
+									<h3>N</h3>
+									<h4>特色美食</h4>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+				
+				$(function() {
+					
+					$("#slider4").responsiveSlides(
+							{
+								auto : true,
+								pager : true,
+								nav : false,
+								speed : 500,
+								namespace : "callbacks",
+								before : function() {
+									$('.events').append(
+											"<li>before event fired.</li>");
+								},
+								after : function() {
+									$('.events').append(
+											"<li>after event fired.</li>");
+								}
+							});
+
+				});
+			</script>
+			
+		</div>
+	</div>
+	<div class="banner">
+    <div class="header">
+      <div class="container">
+        <div class="header-left">
+          <div class="w3layouts-logo">
+            <h1>
+              <a href="index.html">天津 <span>旅游</span></a>
+            </h1>
+          </div>
+        </div>
+        <div class="header-right">
+          <button type="button" class="btn btn-default"  id="login">登录</button>
+          <div class="btn-group" style="display: none;" id="loged">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span id="username_">
+                admin
+              </span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" style="min-width: 60px;">
+              <li><a href="my.html">个人中心</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" id="logout">退出</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="top-nav">
+					<nav class="navbar navbar-default">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed"
+								data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span> <span
+									class="icon-bar"></span> <span class="icon-bar"></span> <span
+									class="icon-bar"></span>
+							</button>
+						</div>
+						
+						<div class="collapse navbar-collapse"
+							id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">景点一览</a></li>
+								<li><a href="notes.html">热门游记</a></li>
+								<li><a href="news.html">旅游指南</a></li>
+								<li><a href="hotal.html">酒店精选</a></li>
+								<li><a class="active list-border " href="foods.html">特色美食</a></li>
+								<li><a href="buy.html">购物攻略</a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="foods" id="foods">
+		<div class="w3-gallery-top">
+			<h3></h3>
+		</div>
+		<div class="w3l-about w3l-gallery">
+			<div class="container">
+				<div class="w3ls-heading">
+					<h3>特色美食</h3>
+				</div>
+				<div class="gallery-grids">
+					<div class="col-md-3 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="images/g1.jpg"
+									data-lightbox="example-set"
+									data-title="狗不理包子是一道由面粉、猪肉等材料制作而成的小吃，始创于公元1858年（清朝咸丰年间），为“天津三绝”之首，是中华老字号之一。狗不理包子的面、馅选料精细，制作工艺严格，外形美观，特别是包子褶花匀称，每个包子都不少于15个褶。">
+									<img src="images/g1.jpg" alt="" />
+									<figcaption></figcaption>
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="images/g2.jpg"
+									data-lightbox="example-set"
+									data-title="十八街麻花是经过反复探索进行创新，在白条和麻条中间夹一条含有桂花、闵姜、桃仁、瓜条等多种小料的酥馅，使炸出的麻花酥软香甜与众不同，创造出的什锦夹馅大麻花。其特点是香、酥、脆、甜，在干燥通风处放置数月不走味，不绵软、不变质。">
+									<img src="images/g2.jpg" alt="" />
+									<figcaption></figcaption>
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="images/g3.jpg"
+									data-lightbox="example-set"
+									data-title="耳朵眼炸糕（英文名：Erduoyan fried rice cake）为天津三绝食品之一，始创于清朝光绪年间（1900年），旧时因店铺紧靠耳朵眼胡同而得名。
+耳朵眼炸糕用糯米作皮面，红小豆、赤白砂糖炒制成馅，以香油炸制而成。
+成品外型呈扁球状，淡金黄色，馅心黑红细腻，是津门特产。 ">
+									<img src="images/g3.jpg" alt="" />
+									<figcaption></figcaption>
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="images/g4.jpg"
+									data-lightbox="example-set"
+									data-title="煎饼馃子是天津著名的小吃。天津人把其作为早点。由绿豆面薄饼，鸡蛋，还有馃子（油条）或者薄脆的“馃篦儿”组成，配以面酱，葱末，腐乳，辣椒酱（可选）作为佐料。">
+									<img src="images/g4.jpg" alt="" />
+									<figcaption></figcaption>
+								</a>
+							</figure>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+					<script src="js/lightbox-plus-jquery.min.js">
+
+					</script>
+				</div>
+				<div class="gallery-grids">
+					<div class="col-md-3 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="images/g5.jpg"
+									data-lightbox="example-set"
+									data-title="大梨糕是天津的一道经典小吃，来源于天津西北角熬糖马家，后经改良，后逐渐驰名开来，成就一方的名小吃。
+												大梨糕黄黄脆脆的，比火柴盒略大，也许是糖熬制得有点过火，吃在嘴里甜中带苦，有股糊了吧唧的味道。">
+									<img src="images/g5.jpg" alt="" />
+									<figcaption></figcaption>
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="images/g6.jpg"
+									data-lightbox="example-set"
+									data-title="油茶面，即“油炒面”、“炒面”，是一种中国的特色小吃。主要原料有小麦粉，食用油，白砂糖，果仁，果脯，芝麻。配料有花生，芝麻，果脯。">
+									<img src="images/g6.jpg" alt="" />
+									<figcaption></figcaption>
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="images/g7.jpg"
+									data-lightbox="example-set"
+									data-title="天津味道传统传承，宫廷贵妃饼手工点心枣泥糕点，面皮奶香，入口即化"> <img
+									src="images/g7.jpg" alt="" />
+									<figcaption></figcaption>
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="images/g8.jpg"
+									data-lightbox="example-set"
+									data-title="天津核桃酥：主要用核桃和枣为原料其营养价值非常高，其质地细腻，柔软，口味滋糯，纯甜，有突出的桃仁清香。">
+									<img src="images/g8.jpg" alt="" />
+									<figcaption></figcaption>
+								</a>
+							</figure>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="main" style="width: 600px;height:400px;margin:0 auto;"></div>
+	<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '天津美食销量图'
+            },
+            tooltip: {},
+            legend: {
+                data:['销量']
+            },
+            xAxis: {
+                data: ["狗不理包子","大麻花","煎饼果子","耳朵眼炸糕","大梨糕","核桃酥"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: [789, 888, 676, 567, 599, 512]
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+
+
+
+	<div class="map" style="margin-top:50px">
+		<iframe id="map" src="https://www.amap.com/search?query=%E5%A4%A9%E6%B4%A5%E7%BE%8E%E9%A3%9F&city=120000&geoobj=117.157729%7C39.113093%7C117.226422%7C39.143798&zoom=14" style="border: 0" allowfullscreen></iframe>
+	</div>
+
+
+	<!-- footer -->
+	<div class="footer" style="margin-top:50px">
+		<div class="container">
+			<div class="copyright">
+				<p>Copyright &copy; 2019.毕业设计————天津旅游网站</p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$().UItoTop({
+				easingType : 'easeOutQuart'
+			});
+
+		});
+	</script>
+</body>
+</html>

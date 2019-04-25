@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/lightbox.css">
+
+<link href="http://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+</head>
+<body>
+	<div class="banner-top">
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li>
+						<div class="w3layouts-banner-top">
+							<div class="container">
+								<div class="agileits-banner-info">
+									<h3>N</h3>
+									<h4>天津之眼</h4>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top1">
+							<div class="container">
+								<div class="agileits-banner-info1">
+									<h3>D</h3>
+									<h4>津湾广场</h4>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top2">
+							<div class="container">
+								<div class="agileits-banner-info2">
+									<h3>S</h3>
+									<h4>五大道</h4>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top3">
+							<div class="container">
+								<div class="agileits-banner-info3">
+									<h3>A</h3>
+									<h4>天塔</h4>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top4">
+							<div class="container">
+								<div class="agileits-banner-info4">
+									<h3>B</h3>
+									<h4>意风区</h4>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+						
+						$(function () {
+						  
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+
+						});
+			</script>
+			
+		</div>
+	</div>
+	
+	<div class="banner">
+	  
+		<div class="header">
+			<div class="container">
+				<div class="header-left">
+					<div class="w3layouts-logo">
+						<h1>
+							<a href="index.html">天津 <span>旅游</span></a>
+						</h1>
+					</div>
+				</div>
+				<div class="header-right">
+				  <button type="button" class="btn btn-default"  id="login">登录</button>
+				  <div class="btn-group" style="display: none;" id="loged">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span id="username_">
+              	admin
+              </span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" style="min-width: 60px;">
+              <li><a href="my.html">个人中心</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" id="logout">退出</a></li>
+            </ul>
+          </div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		
+		<div class="header-bottom">
+			<div class="container">
+				<div class="top-nav">
+						<nav class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+							
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a class="active list-border " href="index.html">景点一览</a></li>
+									<li><a href="notes.html" >热门游记</a></li>
+									<li><a href="news.html" >旅游指南</a></li>
+									<li><a href="hotal.html" >酒店精选</a></li>
+									<li><a href="foods.html" >特色美食</a></li>
+									<li><a  href="buy.html" >购物攻略</a></li>
+								</ul>
+								<div class="clearfix"> </div>
+							</div>
+						</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		<div class="fh5co-listing" style="margin-top:20px">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a target="_blank" href="page.html?index=0" class="fh5co-listing-item">
+							<img src="images/img-1.jpg" alt="" class="img-responsive">
+							<div class="fh5co-listing-copy">
+								<h2>滨江道</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a target="_blank" href="page.html?index=1" class="fh5co-listing-item">
+							<img src="images/img-2.jpg" alt="" class="img-responsive">
+							<div class="fh5co-listing-copy">
+								<h2>五大道</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a target="_blank" href="page.html?index=2" class="fh5co-listing-item">
+							<img src="images/img-3.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
+							<div class="fh5co-listing-copy">
+								<h2>世纪钟</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a target="_blank" href="page.html?index=3" class="fh5co-listing-item">
+							<img src="images/img-4.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
+							<div class="fh5co-listing-copy">
+								<h2>津湾广场</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a target="_blank" href="page.html?index=4" class="fh5co-listing-item">
+							<img src="images/img-5.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
+							<div class="fh5co-listing-copy">
+								<h2>天津大剧院</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a target="_blank" href="page.html?index=5" class="fh5co-listing-item">
+							<img src="images/img-6.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
+							<div class="fh5co-listing-copy">
+								<h2>蓟县</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					
+
+				</div>
+			</div>
+
+		</div>
+
+		
+		<div class="footer" style="margin-top:850px">
+			<div class="container">
+				<div class="copyright">
+					<p>Copyright &copy; 2019.毕业设计————天津旅游网站</p>
+				</div>
+			</div>
+		</div>
+		
+
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+
+</body>
+</html>

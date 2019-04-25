@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"
+	media="all" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/lightbox.css">
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+</head>
+<body>
+	<div class="banner-top">
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li>
+						<div class="w3layouts-banner-notes">
+							<div class="container">
+								<div class="agileits-banner-info">
+									<h3>N</h3>
+									<h4>热门游记</h4>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+						
+						$(function () {
+						  
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+
+						});
+			</script>
+			
+		</div>
+	</div>
+
+	<div class="banner">
+    <div class="header">
+      <div class="container">
+        <div class="header-left">
+          <div class="w3layouts-logo">
+            <h1>
+              <a href="index.html">天津 <span>旅游</span></a>
+            </h1>
+          </div>
+        </div>
+        <div class="header-right">
+          <button type="button" class="btn btn-default"  id="login">登录</button>
+          <div class="btn-group" style="display: none;" id="loged">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span id="username_">
+                admin
+              </span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" style="min-width: 60px;">
+              <li><a href="my.html">个人中心</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" id="logout">退出</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="top-nav">
+					<nav class="navbar navbar-default">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed"
+								data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span> <span
+									class="icon-bar"></span> <span class="icon-bar"></span> <span
+									class="icon-bar"></span>
+							</button>
+						</div>
+						
+						<div class="collapse navbar-collapse"
+							id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">景点一览</a></li>
+								<li><a class="active list-border " href="notes.html">热门游记</a></li>
+								<li><a href="news.html">旅游指南</a></li>
+								<li><a href="hotal.html">酒店精选</a></li>
+								<li><a href="foods.html">特色美食</a></li>
+								<li><a href="buy.html">购物攻略</a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="traffice" id="traffice">
+		<div class="w3-services-top">
+			<h3></h3>
+		</div>
+		<div class="w3l-about w3l-services">
+			<div class="container">
+				<div class="w3ls-heading">
+					<h3>热门游记</h3>
+				</div>
+				
+				<div class="fh5co-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 fh5co-news">
+					<ul>
+						<li><a href="#" data-toggle="modal" data-target="#myModal"> <span class="fh5co-date">漫步天津 • 探访百年天津卫的昨夜今日</span></a>
+								<p>前言部分 应该来说, 之前这段时间, 上班之余的创作时间都在忙于那个关于澳洲的追忆似水年华系列游记，而紧接着陪爸妈去了一趟瑞士，
+								而瑞士游记几乎是写了整整三个月，写得是被朋友各种追讨要攻略的。一眨眼，继去年的 新疆 游记之后已经许久没有写过关于国内的游记了。
+								2018年度的第2篇游记，国庆节的例行放假，来到了 中国 的四大直辖市之一 天津...</p>
+						</li>
+						<li><a href="#" data-toggle="modal" data-target="#myModal1"> <span class="fh5co-date">出发，新一年的旅程就从天津开始</span></a>
+								<p>2019年01月22日，我向自己预约了这篇游记，当时我说：新年第一游，带孩子们一起去探索兼具民国范与现代气息的 天津 城。
+								为什么是天津 2019年01月22日，我向自己预约了这篇游记，当时我说：新年第一游，带孩子们一起去探索兼具民国范与现代气息的天津城。 愿望许下了，于是开.....</p>
+						</li>
+						<li><a href="#" data-toggle="modal" data-target="#myModal2"><span class="fh5co-date">寻觅那一套煎饼果子——天津之旅</span></a>
+								<p>三月份的尾巴，赶上了单位给串休三天，万物复苏的季节，来不及去太远的地方，又不愿浪费这大好的时光，看着屏幕上的地图，看着办公桌上早上买的煎饼果子，不如就那里吧，
+								叫上一起串休的好友，无需太多攻略，只是为了放松一下前一阵紧张的工作带来的疲惫，买好车票订好酒店，其他一切让我们顺其自然....</p>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+				
+				
+				
+				<!-- <div class="agileits-services-grids">
+					<div class="col-md-4 agileits-services-grid">
+						<i class="fa fa-bus" aria-hidden="true"></i>
+						<h4>公交车</h4>
+					</div>
+					<div class="col-md-4 agileits-services-grid">
+						<p>
+							市区主干线路：1路，95路，600路，705路，827路，10路，12路，13路，15路，18路，20路，22路<br />
+							观光路线：观光1路，观光2路，观光3路
+						</p>
+					</div>
+
+					<div class="clearfix"></div>
+				</div>
+				<div class="agileits-services-grids">
+					<div class="col-md-4 agileits-services-grid">
+						<i class="fa fa-subway" aria-hidden="true"></i>
+
+						<h4>
+							<a href="#" data-toggle="modal" data-target="#myModal">地铁</a>
+						</h4>
+					</div>
+
+					<div class="col-md-4 agileits-services-grid">
+						<p>
+							截至2018年12月，天津轨道交通运营线路共有6条，包括地铁1、2、3、5、6号线及9号线（津滨轻轨），线网覆盖10个市辖区，运营里程215千米，共设车站154座。<br />
+							价格：乘坐5站4区间以内（含5站）为2元，乘坐5站4区间以上，10站9区间以下（含10站）为3元，乘坐10站9区间以上，16站15区间以下（含16站）为4元，乘坐16站15区间以上为5元
+						</p>
+					</div> -->
+
+					<div class="clearfix"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<!-- <div class="modal about-modal fade" id="myModal" tabindex="-1"
+		role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div>
+					<img src="images/dt.jpeg" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</div> -->
+	
+	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">漫步天津 • 探访百年天津卫的昨夜今日</h4>
+						<h5>出发时间：2018-09-30/出行天数：5 天/人物：和同学</h5>
+					</div>
+					<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/yj1.jpg" alt="" />
+						<p>到了 北安 桥，这里是海河游船的第一站， 意大利 风情区.........
+天津 意式风情区位于 天津 市 河北 区，由 河北 区五经路、 河北 区博爱道、 河北 区胜利路、 河北 区建国道合围而成的四方形地区，区内拥有保存完整的百年历史 欧洲 建筑近200栋。
+	<br>							从 北安 桥，穿过进步桥，前方是海河上面的金汤桥。金汤桥位于建国道西端与水阁大街之间的海河上。桥名金汤是取“固若金汤”之意。桥长76.4米，总宽10.5米，面积802.2平米。是 天津 市现存最早建造的大型铁桥之一。如今，提到1949年1月14日解放 天津 城的激战，最为深入人心的场面当属会师金汤桥。
+		<br>						过了三岔河口，海河游船到达了它的第二个停靠点，大悲院码头。天津 之眼（The Tientsin Eye），全称 天津 永乐桥摩天轮（The Yongle Bridge Tientsin Eye），跨海河连接 河北 区与红桥区，是一座跨河建设、桥轮合一的摩天轮，兼具观光和交通功用。门票70元。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal about-modal fade" id="myModal1" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">出发，新一年的旅程就从天津开始</h4>
+						<h5>出发时间：2019-02-05/出行天数：3 天/人物：带孩子</h5>
+					</div>
+					<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/ly2.jpg" alt="" />
+						<p>严格来说， 天津 跟 青岛 还是有几份相似的， 比如 老城区一栋栋民国时期兴建的洋楼和充满异域风情的街道。不过，文艺青年和小资们的最爱不一定适合孩子，而且容易形成审美疲劳。所以这次旅行我们选择了不走寻常路的小众玩法，网络上排名前几位的景区全部忽略，以孩子的兴趣为主。
+来 天津 之前，就被号称“ 中国 最美图书馆”的 天津 滨海新区文化中心图书馆给种草了，照片中的图书馆就仿佛是另一个世界的建筑，既然到了滨海新区，一定去看看。除了随大溜的去欣赏建筑艺术，顺便带喜欢看书的小哥俩去读读书不是很好吗。
+	<br>						我对教堂很感兴趣，在国内，教堂的建筑风格与其他楼宇差异很大，建有这种大型教堂的区域基本都有着一段相同的独特历史——租界，对我们来说，这是个不光彩的回忆，但只要我们以史为鉴，知耻而后勇，曾经的历史肯定不会再次重演。而在 和平 年代，这些具有百年历史的教堂也在一直发挥着他们传经布道的本质作用，对于我，在这里，往往更容易获得片刻心灵的宁静。
+		<br>						天津 滨海航母主题公园地处 天津 市滨海新区，从市区过去大概一个半小时车程，过年期间交通状况不错，一路上都没看到几辆车。
+景区的位置比较偏僻，个人感觉如果乘坐公共交通工具来的话肯定要颇费周折。可能是靠近海边的缘故，下车后发现室外的风很大，好在阳光不错，给孩子们包裹严实了，走起</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal about-modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">寻觅那一套煎饼果子——天津之旅</h4>
+						<h5>出发时间：2018-09-30/出行天数：5 天/人物：和同学</h5>
+					</div>
+					<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/ly3.jpg" alt="" />
+						<p>吃了炸糕，心情也变得好起来，出发前往我们的下一站——静园，静园是溥仪和婉容文绣等亲信从紫禁城离开后在 天津 的住所，在这发生了很有名的“妃革命”，门票20元/人，里面会介绍关于溥仪的相关历史，静园也曾经历沧桑，残破不堪，后经政府修缮才有今天的样貌，来这里了解一下当时的历史还是不错的选择的。
+	<br>						睁开眼的第一件事必须是去寻觅早餐，顶着凌乱的头发去了附近的南市食品街的一个早餐店，叫美玲拉面，点了 天津 特色的锅巴菜、烧饼牛肉和卷圈，味道嘛，锅巴菜卤子还算有味道，烧饼和卷圈都有点凉，影响了味道
+		<br>						看了一下时间，十一点半，想去的小店刚好十一点半开始营业，网传稍晚点就要等位 的小店一定要去试试，饭店不大，老板人很好，会给游客比较中肯的推荐，在我和小伙伴准备点第四个菜的时候友善的提醒我们应该吃不完那么多
+点了必吃第一位的八珍豆腐（内含鱿鱼、蟹棒、大虾、鸡丁等八种荤菜，配内酯豆腐，很好吃的，推荐）老面筋（味道不错但吃几口就腻了）大咖花椰菜（鲜香麻辣呀，爽口）银丝卷（馒头里面是还是面，但是配这几个菜还挺好吃的）这些花了116，性价比还是挺高的。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer" style="margin-top:50px">
+		<div class="container">
+			<div class="copyright">
+				<p>Copyright &copy; 2019.毕业设计————天津旅游网站</p>
+			</div>
+		</div>
+	</div>
+		
+
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+	
+</body>
+</html>

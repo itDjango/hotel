@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"
+	media="all" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/lightbox.css">
+
+<link
+	href="http://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext"
+	rel="stylesheet">
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+	rel="stylesheet">
+<link
+	href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300'
+	rel='stylesheet' type='text/css'>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+
+	function showMap(url) {
+		$("#map").attr("src", url);
+		document.frames('map').location.reload();
+	}
+</script>
+
+</head>
+<body>
+
+	<div class="banner-top">
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li>
+						<div class="w3layouts-banner-buy">
+							<div class="container">
+								<div class="agileits-banner-info">
+									<h3>N</h3>
+									<h4>购物攻略</h4>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+						
+						$(function () {
+						  
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+
+						});
+			</script>
+			
+		</div>
+	</div>
+	<div class="banner">
+	   <div class="header">
+      <div class="container">
+        <div class="header-left">
+          <div class="w3layouts-logo">
+            <h1>
+              <a href="index.html">天津 <span>旅游</span></a>
+            </h1>
+          </div>
+        </div>
+        <div class="header-right">
+          <button type="button" class="btn btn-default"  id="login">登录</button>
+          <div class="btn-group" style="display: none;" id="loged">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span id="username_">
+                admin
+              </span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" style="min-width: 60px;">
+              <li><a href="my.html">个人中心</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" id="logout">退出</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="top-nav">
+					<nav class="navbar navbar-default">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed"
+								data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span> <span
+									class="icon-bar"></span> <span class="icon-bar"></span> <span
+									class="icon-bar"></span>
+							</button>
+						</div>
+						
+						<div class="collapse navbar-collapse"
+							id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">景点一览</a></li>
+								<li><a href="notes.html">热门游记</a></li>
+								<li><a href="news.html">旅游指南</a></li>
+								<li><a href="hotal.html">酒店精选</a></li>
+								<li><a href="foods.html">特色美食</a></li>
+								<li><a class="active list-border " href="buy.html">购物攻略</a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="fh5co-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 fh5co-news">
+					<ul>
+						<li onClick="showMap('https://www.amap.com/place/B00160E7RN');"><a href="#map"> <span class="fh5co-date">天津劝业场</span></a>
+								<h3>天津市和平区和平路290号</h3>
+								<p>劝业场商场(和平路店)是天津最早的百货商场，目前依旧占据着商业街的最中心位置，乃当地商业的一个象征。
+									现在是天津三大零售百货商场之一，也是全国著名十大商场之一。</p>
+						</li>
+						<li onClick="showMap('https://www.amap.com/place/B0FFGQ8N4M');"><a href="#map"> <span class="fh5co-date">滨江道</span></a>
+								<h3>天津市滨江道张自忠路至南京路</h3>
+								<p>为自海河边的张自忠路起，向西南方向延伸到南京路上，全长2094米，分两段建成。最与众不同的是这里的夜市，小商贩会占据道路中间，游客在路两边行走，这样既不影响逛商店，也不会耽误你挑选他们的商品。
+								</p>
+						</li>
+						<li onClick="showMap('https://www.amap.com/place/B001611OM4');"><a href="#map"> <span class="fh5co-date">大悦城</span></a>
+								<h3>天津市南开区南门外大街</h3>
+								<p>集吃喝玩乐于一体的大型购物商场，非常适合年轻人聚餐约会和家长带小朋友来参加亲子活动。商场交通便利，坐地铁直接就到了。天津的大悦城定位在主题商场上，所以你每次来都能赶上一次主题活动，逛的人非常多。
+								</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6 fh5co-testimonial">
+					<img src="images/cover_bg_1.jpg" class="img-responsive mb20"> 
+					<img src="images/cover_bg_2.jpg" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="map">
+		<iframe id="map" src="https://www.amap.com/" style="border: 0" allowfullscreen></iframe>
+	</div>
+	
+	<div class="footer" style="margin-top:50px">
+		<div class="container">
+			<div class="copyright">
+				<p>Copyright &copy; 2019.毕业设计————天津旅游网站</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+
+			$().UItoTop({ 
+				easingType: 'easeOutQuart' 
+			});
+
+		});
+	</script>
+	
+</body>
+</html>

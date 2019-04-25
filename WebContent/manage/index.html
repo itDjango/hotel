@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>我的</title>
+    <link href="css/materialize.css" tpe="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/style12.css?v=20180504" />
+    <link href="css/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link rel="stylesheet" type="text/css" href="../css/message.css"/>
+
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="wrapper">
+        <aside id="left-sidebar-nav">
+          <ul id="slide-out" class="side-nav fixed leftside-navigation">
+            <li class="user-details cyan darken-2">
+              <div class="row">
+                <div class="col col s4 m4 l4">
+                  <img src="img/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                </div>
+                <div class="col col s8 m8 l8">
+                  <ul id="profile-dropdown" class="dropdown-content">
+                    <li>
+                      <a href="../index.html"><i class="fa fa-home"></i> 首页</a>
+                    </li>
+                    <li>
+                      <a id="logout" href="#"><i class="fa fa-sign-out"></i>退出</a>
+                    </li>
+                  </ul>
+                  <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="../index.html" data-activates="profile-dropdown"><span id="username"></span>
+                    <i class="fa fa-angle-down right"></i></a>
+                  <p class="user-roal" id="role_name"></p>
+                </div>
+              </div>
+            </li>
+            <li class="bold">
+              <a href="index.html" class="waves-effect waves-cyan"><i class="fa fa-address-card"></i> 个人信息</a>
+            </li>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li class="bold">
+                  <a class="collapsible-header waves-effect waves-cyan"><i class="fa fa-history"></i> 订单管理</a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li>
+                        <a href="hotel.html">酒店订单</a>
+                      </li>
+                      <li>
+                        <a href="ad.html">景点订单</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="li-hover">
+              <div class="divider"></div>
+            </li>
+            <li class="li-hover">
+              <div class="divider"></div>
+            </li>
+          </ul>
+          <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2"><i class="mdi-navigation-menu"></i></a>
+        </aside>
+
+        <section id="content">
+          <div class="container">
+            <div class="row" style="margin-top: 30px;">
+              <div class="col s12 m2 l3">
+                &nbsp
+              </div>
+              <div class="col s12 m8 l6">
+                <div id="profile-card" class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/user-bg.jpg" alt="user background">
+                  </div>
+                  <div class="card-content">
+                    <img src="img/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
+                    <a class="btn-floating activator btn-move-up waves-effect waves-light blue right">
+                      <i class="mdi-editor-mode-edit"></i>
+                    </a>
+
+                    <span class="card-title activator grey-text text-darken-4" id="username_"></span>
+                    <p>居住地：<span id="peopleCount">天津</span></p>
+                    <p><span id="time"></span></p>
+                    <p style="margin-bottom: 50px;">生日：<span id="ps">1998-01-01</span></p>
+
+                  </div>
+                  <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                    <span class="card-title grey-text text-darken-4">修改信息<i class="fa fa-times right"></i></span>
+                    <form id="edit_form" style="margin-top: 20px;">
+                      <div class="input-field inline">
+                        <input id="ed_username" type="text" class="validate" name="username" placeholder="输入修改的用户名">
+                        <label for="ed_username">用户名</label>
+                      </div>
+                      <div class="input-field inline">
+                        <input id="email" type="password" class="validate" name="password">
+                        <label for="email">密码</label>
+                      </div>
+                      <div class="input-field inline">
+                        <input id="repeatPassword" type="password" class="validate" name="repeatPassword">
+                        <label for="repeatPassword">确认密码</label>
+                      </div>
+                      <div class="input-field inline">
+                        <input id="ed_ps" placeholder="输入修改的备注" type="text" class="validate" name="unitname">
+                        <label for="ed_ps">备注</label>
+                      </div>
+                      <input type="" name="id" id="id" value="" style="display: none;"/>
+                      <input type="" name="roleName" id="roleName" value="" style="display: none;"/>
+                    </form>
+                    <a id="send" class="waves-effect waves-light btn blue">确定提交</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <!--  Scripts-->
+  <script src="../js/jquery-1.11.1.min.js"></script>
+  <script src="../materialize-src/js/bin/materialize.min.js"></script>
+  <script src="../js/init.js"></script>
+  <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+  <!--scrollbar-->
+  <script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+
+  <!-- chartist -->
+  <script type="text/javascript" src="js/chartist.min.js"></script>
+
+  <!-- sparkline -->
+  <script type="text/javascript" src="js/jquery.sparkline.min.js"></script>
+  <script type="text/javascript" src="js/sparkline-script.js"></script>
+
+  <!--jvectormap-->
+  <script type="text/javascript" src="js/jquery-jvectormap-1.2.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-jvectormap-world-mill-en.js"></script>
+  <script type="text/javascript" src="js/vectormap-script.js"></script>
+
+  <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+  <!--<script type="text/javascript" src="js/plugins.js"></script>-->
+
+  <script src="js/main/use.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../css/message.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $("#head").load("../public_head.html?v=20180504", function() {
+      $("#right_menu").hide();
+      $("#logo-container").attr("href", "../index.html");
+      $("#nav").css({
+        position: "fixed",
+        "top": "0px",
+        "z-index": 10000,
+        "padding-left": "95px"
+      });
+    })
+    $(window).load(function() {
+      //      $("div input").val("");
+      $("div input").focusout(function() {
+        if($(this).val() != "") {
+          $(this).addClass("has-content");
+        } else {
+          $(this).removeClass("has-content");
+        }
+      })
+    });
+  </script>
+
+</html>

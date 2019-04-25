@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/input.css" />
+    <link rel="stylesheet" type="text/css" href="css/message.css"/>
+  </head>
+
+  <body style="background: url('images/4.jpg') no-repeat;background-size: cover">
+    <main>
+      <form class="form">
+        <div class="form__cover"></div>
+        <div class="form__loader">
+          <div class="spinner active">
+            <svg class="spinner__circular" viewBox="25 25 50 50">
+              <circle class="spinner__path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="form__content">
+          <h1>登录天津旅游平台</h1>
+          <div class="styled-input">
+            <input type="text" id="username" class="styled-input__input" name="nickname">
+            <div class="styled-input__placeholder"> <span class="styled-input__placeholder-text">Username</span> </div>
+            <div class="styled-input__circle"></div>
+          </div>
+          <div class="styled-input">
+            <input type="password" id="password" class="styled-input__input">
+            <div class="styled-input__placeholder"> <span class="styled-input__placeholder-text">Password</span> </div>
+            <div class="styled-input__circle"></div>
+          </div>
+          <button type="button" class="styled-button" id="btn"> <span class="styled-button__real-text-holder"> <span class="styled-button__real-text">Submit</span> <span class="styled-button__moving-block face"> <span class="styled-button__text-holder"> <span class="styled-button__text">登录</span> </span> </span><span class="styled-button__moving-block back"> <span class="styled-button__text-holder"> <span class="styled-button__text">Submit</span> </span> </span> </span> </button>
+        </div>
+      </form>
+    </main>
+  </body>
+  <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+  <script src="css/message.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  	$("#btn").click(function () {
+  	  var name = $("#username").val();
+  	  var psw = $("#password").val();
+  	  if (name != '' && psw != '')  {
+  	    localStorage.setItem("islogon",true);
+  	    localStorage.setItem("name",name);
+  	    window.location.href = 'index.html';
+  	  } else {
+  	     $.message({
+          message: '请输入完整',
+          type:'error'
+        });
+  	  }
+  	})
+  </script>
+
+</html>
